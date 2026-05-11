@@ -17,7 +17,7 @@ model = pickle.load(open("health.pkl", "rb"))
 
 @app.get("/")
 def home():
-    return {"message": "Health fitness weight prediction API is working"}
+    return {"message": "Health fitness weight prediction API is working with CI/CD"}
 
 @app.post("/predict")
 def predict(data: dict):
